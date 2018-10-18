@@ -40,25 +40,19 @@
 */
 
 provider "aws" {
-  version = "~> 0.1"
   region  = "${var.region}"
 }
 
 provider "template" {
-  version = "~> 0.1"
 }
 
 provider "tls" {
-  version = "~> 1.0"
 }
 
 provider "terraform" {
-  version = "~> 0.1"
 }
 
 terraform {
-  required_version = "~> 0.10"
-
   backend "s3" {
     encrypt = true
   }
